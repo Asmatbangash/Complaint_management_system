@@ -4,7 +4,7 @@ import SAdashboard from './Component/SAadmin.jsx/SAdashbaord'
 
 
 function App() {
-  const[user, setUser] = useState('super-admin')
+  const[user, setUser] = useState('admin')
   return (
     <>
     {user === 'super-admin' ? <SAdashboard /> :  <Dashboard />}

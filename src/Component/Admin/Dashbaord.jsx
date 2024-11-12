@@ -1,10 +1,8 @@
-
 import { Link } from 'react-router-dom';
-import logo from '../../assets/images/CMS.png'
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Outlet } from 'react-router-dom';
-import { useState } from 'react';
+
 
 const navigation = [
   { name: 'Dashboard', href: '/', current: true },
@@ -26,13 +24,6 @@ function classNames(...classes) {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 items-center justify-between">
               <div className="flex items-center">
-                <div className="shrink-0">
-                  <img
-                    alt="Your Company"
-                    src={logo}
-                    className="h-12 w-12"
-                  />
-                </div>
                 <div className="hidden md:block">
                   <div className="ml-10 flex items-baseline space-x-4">
                     {navigation.map((item) => (
@@ -105,11 +96,12 @@ function classNames(...classes) {
 
         <header className="bg-white shadow">
           <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-            <h1 className="text-3xl font-bold tracking-tight text-gray-900">Dashboard</h1>
+            <h1 className="text-3xl font-bold tracking-tight text-gray-900">admin</h1>
           </div>
         </header>
         <main>
-          <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8"><Outlet /></div>
+          <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+            <Outlet /></div>
         </main>
       </div>
     </>
